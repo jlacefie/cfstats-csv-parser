@@ -15,18 +15,18 @@ The executable jar file is named cfstats-parser.one-jar.jar
 
 To execute the jar, copy the jar to a destination.  Then run the following command:
 
-java -jar cfstats-parser.one-jar.jar <source file> <output file>
-  - <source file> = arg[0]
-  - <output file> = arg[1]
+java -jar cfstats-parser.one-jar.jar [source file] [output file]
+  - [source file] = arg[0]
+  - [output file] = arg[1]
 
 Once you have the output file, you can import it into Excel or another csv tool and then analyze the results, add graphs, format, etc.
 
 This utility has been tested with 1.2.12 of Cassandra and DSE 3.1.2.  It also includes two "newish" metrics, which if not present via nodetool cfstats will be blank.
 
 Version 0.1 of the cfstatsparser has the following issues:
-1)  No loggin support
-2)  Very little exception handling
-3)  It's essentially a quick-and-dirty build
-4)  Only one output format
+-  No loggin support
+-  Very little exception handling
+-  It's essentially a quick-and-dirty build
+-  Only one output format
 
 Please feel free to augment the tool with your additions.
